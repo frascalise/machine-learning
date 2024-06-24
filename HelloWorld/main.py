@@ -26,6 +26,7 @@ model = tf.keras.models.Sequential([
 ])
 
 clear_screen()
+print("TensorFlow version:", tf.__version__)
 
 predictions = model(x_train[:1]).numpy()
 print("===== PREDICTIONS =====")
